@@ -7,6 +7,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(require('cors')())
 
 
-app.listen(80, () => {
+app.listen(3001, () => {
     console.log('서버 실행중')
 })
