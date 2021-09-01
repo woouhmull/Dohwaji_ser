@@ -1,5 +1,4 @@
 const express = require('express');
-const spawn = require('child_process').spawn;
 
 const app = express();
 // body-parser => req.body
