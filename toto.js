@@ -9,4 +9,6 @@ app.use(require('cors')())
 
 app.listen(3001, () => {
     console.log('서버 실행중')
+    console.log('Data in')
+    await sleep(1000);
 })
