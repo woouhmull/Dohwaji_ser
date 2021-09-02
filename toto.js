@@ -10,15 +10,7 @@ app.use(require('cors')())
 app.listen(3001, () => {
 
     console.log('서버 실행중')
-    async () =>{
-      await sleep(7000);
-      console.log('Data in')
-      await sleep(1000);
-      console.log('37');
+    setTimeout(() => console.log('Data in'),7000);
+    setTimeout(() => console.log('37'),1000);
     }
 })
-const sleep = (ms) => {
-     return new Promise(resolve=>{
-         setTimeout(resolve,ms)
-     })
- }
