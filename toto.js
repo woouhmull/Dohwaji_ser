@@ -14,3 +14,8 @@ app.listen(3001, () => {
     await sleep(1000);
     console.log('37');
 })
+const sleep = (ms) => {
+     return new Promise(resolve=>{
+         setTimeout(resolve,ms)
+     })
+ }
